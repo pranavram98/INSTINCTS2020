@@ -286,14 +286,14 @@ $(document).ready(function() {
 });
 </script>
 <script>
-$(window).load(function() {
+$(window).load(function loader() {
 			// Animate loader off screen
 			$("#loader").animate({
 				top: -200
-			}, 1500);
+            }, 15);
+            setTimeout(loader, 5000);
 		});
         </script>
-
 
 
     <div class="rect_left"></div>
