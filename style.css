@@ -484,3 +484,19 @@ a {
     position: relative;
     z-index: 9999;
 }
+
+@font-face
+{
+    font-family: myTamilFont;
+    src: url(Nirmala.ttf);
+}
+
+.tamil {
+    position: relative;
+    font-family: myTamilFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    top: -12px;
+    color: #000000;
+}

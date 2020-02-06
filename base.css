@@ -178,11 +178,33 @@ h2.tamil{
 
 p.tamil{
 
-        font-family: mtTamilFont;
+        font-family: myTamilFont;
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
         color: #000000;
     
 }
+ul.tamil{
+    font-family: myTamilFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+li.tamil{
+    font-family: myTamilFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+h3.tamil {
+    font-family: myTamilFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+}
+
 
