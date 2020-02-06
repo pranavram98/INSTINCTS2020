@@ -89,8 +89,8 @@ body {
 .cen {
     text-align: left;
     position: relative;
-    padding-left: 30vh;
-    padding-right: 30vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
 }
 
 h2 {
@@ -158,3 +158,31 @@ b {
     width: 1400px;
     left: 50px;
 }
+
+
+@font-face
+{
+    font-family: myTamilFont;
+    src: url(Nirmala.ttf);
+}
+
+h2.tamil{
+
+    font-family: myTamilFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    color: #000000;
+    text-decoration: underline;
+}
+
+p.tamil{
+
+        font-family: mtTamilFont;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000000;
+    
+}
+
