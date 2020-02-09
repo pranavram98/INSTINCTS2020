@@ -203,10 +203,19 @@
         <div class="sponsorship_image"></div>
         <img src="./res/sponsor_title.svg" class="sponsortitle" />
         <div class="sponsortitle"></div>
-        <div class="sponsor-container">
+
+
+        <div class="sponsor-container fade">
             <h1>Title Sponsor</h1>
             <img src="./res/hcl.jpg" alt="" height="100%" width="100%">
         </div>
+
+        <!-- <div class="sponsor-container fade">
+            <h1>Associate Sponsor</h1>
+            <img src="./res/hcl.jpg" alt="" height="100%" width="100%">
+        </div> -->
+
+
         <div class="sponsor_bottom"></div>
     </section>
 
@@ -256,18 +265,28 @@
             slides[slideIndex - 1].style.display = "block";
             setTimeout(showSlides, 4000); // Change image every 4 seconds
         }
+
+        // var spi = 0;
+        // showSpons();
+
+        // function showSpons() {
+
+        //     var i;
+        //     var slides = document.getElementsByClassName("sponsor-container");
+        //     for (i = 0; i < 12; i++) {
+        //         slides[i].style.display = "none";
+        //     }
+        //     spi++;
+        //     if (spi > 12) {
+        //         spi = 1
+        //     }
+        //     slides[spi - 1].style.display = "block";
+        //     setTimeout(showSlides, 4000); // Change image every 4 seconds
+
+        // }
     </script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        var loader = document.getElementById("loader");
-        window.addEventListener("load", function() {
-            loader.style.height = "100px";
-            loader.style.width = "100px";
-            loader.style.borderRadius = "50%";
-            loader.style.visibility = "hidden";
-        });
-    </script>
+ 
 
     <script>
         $(window).scroll(function() {
