@@ -18,6 +18,9 @@
     <title> Instincts 2020 </title>
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -182,9 +185,7 @@
                     <div class="mySlides fade">
                         <img src="./res/11.jpg" style="width:100%">
                     </div>
-                    <div class="mySlides fade">
-                        <img src="./res/12.jpg" style="width:100%">
-                    </div>
+                    
 
                 </div>
                 <br>
@@ -205,15 +206,20 @@
         <div class="sponsortitle"></div>
 
 
-        <div class="sponsor-container fade">
-            <h1>Title Sponsor</h1>
-            <img src="./res/hcl.jpg" alt="" height="100%" width="100%">
+        <div class="sponsor-container">
+
+            <img src="./res/hcl.jpg" alt="" height="100%" width="100%" class="mySlide" >
+
+
+
+            <!-- macha just copy paste the one line above and change the src to the sponsorship logos 
+            
+            <img src="./res/hcl2.jpg" alt="" height="100%" width="100%" class="mySlide" > 
+            <img src="./res/hcl3.jpg" alt="" height="100%" width="100%" class="mySlide" >  -->
+
         </div>
 
-        <!-- <div class="sponsor-container fade">
-            <h1>Associate Sponsor</h1>
-            <img src="./res/hcl.jpg" alt="" height="100%" width="100%">
-        </div> -->
+    
 
 
         <div class="sponsor_bottom"></div>
@@ -255,69 +261,61 @@
         function showSlides() {
             var i;
             var slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < 12; i++) {
+            for (i = 0; i < 11; i++) {
                 slides[i].style.display = "none";
             }
             slideIndex++;
-            if (slideIndex > 12) {
+            if (slideIndex > 11) {
                 slideIndex = 1
             }
             slides[slideIndex - 1].style.display = "block";
             setTimeout(showSlides, 4000); // Change image every 4 seconds
         }
 
-        // var spi = 0;
-        // showSpons();
+    </script>
 
-        // function showSpons() {
-
-        //     var i;
-        //     var slides = document.getElementsByClassName("sponsor-container");
-        //     for (i = 0; i < 12; i++) {
-        //         slides[i].style.display = "none";
-        //     }
-        //     spi++;
-        //     if (spi > 12) {
-        //         spi = 1
-        //     }
-        //     slides[spi - 1].style.display = "block";
-        //     setTimeout(showSlides, 4000); // Change image every 4 seconds
-
-        // }
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlide");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
     </script>
 
  
 
-    <script>
-        $(window).scroll(function() {
-            var height = $(window).scrollTop();
-            if (height > 100) {
-                $('#myBtn').fadeIn();
-            } else {
-                $('#myBtn').fadeOut();
-            }
-        });
-        $(document).ready(function() {
-            $("#myBtn").click(function(event) {
-                event.preventDefault();
-                $("html, body").animate({
-                    scrollTop: 0
-                }, "slow");
-                return false;
-            });
-
-        });
-    </script>
-    <script>
-        $(window).load(function loader() {
-            // Animate loader off screen
-            $("#loader").animate({
-                top: -200
-            }, 15);
-            setTimeout(loader, 5000);
-        });
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
     </script>
 
+    
 
     <div class="rect_left"></div>
     <div class="rect_right"></div>
