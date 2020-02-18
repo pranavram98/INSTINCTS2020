@@ -364,15 +364,16 @@ body {
 
 .sponsor-container {
     top: 3050px;
-    left: 525px;
-    max-width: 400px;
+    left: 470px;
+    max-width: 500px;
     position: absolute;
     margin: auto;
 }
 
 .mySlide {
     display:none;
-    max-width: 400px;
+    max-width: 500px;
+    
 }
 
 
