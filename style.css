@@ -360,7 +360,7 @@ body {
     top: 2955px;
     position: absolute;
     left: 325px;
-    
+
 }
 
 .sponsor-container {
@@ -487,6 +487,7 @@ h1 {
 #myBtn:hover {
     background-color: #555;
 }
+
 
 a {
     position: relative;
