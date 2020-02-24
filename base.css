@@ -1,10 +1,10 @@
 @-ms-viewport {
-    width: device-width;
+    width: auto;
 }
 
 html {
-    overflow-y: scroll;
-    -ms-overflow-style: scrollbar;
+   /* overflow-y: scroll;
+    */
 }
 
 html,
@@ -21,7 +21,7 @@ body {
     background: #ffc929;
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased;
+  /*  -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -29,7 +29,7 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    cursor: default;
+    cursor: default;*/
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -111,16 +111,18 @@ p {
 }
 
 .back {
+    position: relative;
+    display: initial;
     padding-left: 170px;
     padding-top: 10px;
-    max-width: 50px;
+    width: 50px;
     height: 50px;
-    text-align: right;
+    
 }
 
 img {
     padding-top: 10px;
-    display: block;
+
     left: -20px;
     position: relative;
 }
@@ -208,3 +210,61 @@ h3.tamil {
 }
 
 
+@media screen and (max-width: 480px) and (max-width:800px) {
+  li.tamil,p.tamil,ul.tamil, li, p{
+        font-size: 15px;
+    }
+    h2.tamil,h2{
+        font-size: 30px;
+    }
+    h3.tamil,h3{
+        font-size: 24px;
+    }
+
+    .rect_left {
+        background: url("./res/side_rect_left.svg");
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-size: 20%;
+        background-repeat: repeat-y;
+     
+    }
+    
+    .rect_right {
+        background: url("./res/side_rect_right.svg");
+        position: absolute;
+        right:0px;
+        top: 0px;
+        background-size:20%;
+        background-repeat: repeat-y;
+        background-position: right;
+        
+    }
+    .rect_bottom {
+        left:5%;
+    }
+    .back {
+        padding-left: 60px;
+        padding-top: 10px;
+        height: 50px;
+        width:50px;
+        opacity: 0;
+
+    }
+    .cen{
+        text-align: justify;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .logo{
+        width: 70%;
+        top: 1%;
+        padding-left: 10%;
+    }
+    .event_title{
+        top:10;
+        font-size: 45px;
+    }
+    
+}

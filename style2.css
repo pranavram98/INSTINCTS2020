@@ -1,0 +1,21 @@
+.banner{
+     top:0;
+     width: 100%;
+     height: 100%;
+     background:url("res/bg.svg");
+     background-size:cover;
+     margin-bottom: 0%;
+     background-repeat: no-repeat;
+}
+.height100p{
+    height:100vh;
+}
+.h100{
+    height:100%;
+}
+
+.contentb{
+    position:relative;
+    top:20%;
+   
+}

@@ -64,6 +64,8 @@ body {
     
 }
 
+
+
 .small_rect {
     position: absolute;
     width: 80px;
@@ -141,7 +143,7 @@ body {
 }
 
 .instincts_2020 {
-    background: url("./res/logo_2020.svg");
+   
     position: absolute;
     left: 529px;
     right: 529px;
@@ -360,21 +362,19 @@ body {
     top: 2955px;
     position: absolute;
     left: 325px;
-
 }
 
 .sponsor-container {
     top: 3050px;
-    left: 470px;
-    max-width: 500px;
+    left: 525px;
+    max-width: 400px;
     position: absolute;
     margin: auto;
 }
 
 .mySlide {
     display:none;
-    max-width: 500px;
-    
+    max-width: 400px;
 }
 
 
@@ -488,7 +488,6 @@ h1 {
     background-color: #555;
 }
 
-
 a {
     position: relative;
     z-index: 9999;
@@ -508,4 +507,48 @@ a {
     font-size: 24px;
     top: -12px;
     color: #000000;
+}
+@media screen and (max-width: 480px) {
+    .rect_left {
+        background: url("./res/side_rect_left.svg");
+        position: absolute;
+        width: 0px;
+        height: 4350px;
+        left: 0px;
+        top: 0px;
+    }
+    
+    .rect_right {
+        background: url("./res/side_rect_right.svg");
+        position: absolute;
+        width: 0px;
+        height: 4350px;
+        
+        right: 0px;
+        top: 0px;
+        
+    }
+    .instincts_2020 {
+     
+        position: absolute;
+        left: 13%;
+       
+        top: 20%;
+        width:80%;
+        height:auto;
+    }
+    .hide{
+        display: none;
+    }
+    .landing_image {
+    background: url("./res/front.svg");
+    position: absolute;
+    width: 698.32px;
+    height: 321.01px;
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    left: 13%;
+    top: 351px;
+}
+ 
 }
