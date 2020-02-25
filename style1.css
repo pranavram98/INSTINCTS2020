@@ -259,6 +259,22 @@ body {
     
 }
 
+.lights {
+    position: relative;
+}
+
+.lightleft {
+    position: absolute;
+    left: 35px;
+    top: -550px;
+}
+
+.lightright {
+    position: absolute;
+    top: -550px;
+    right: -215px;
+}
+
 .gallery {
     position: absolute;
     top: 1200px;
