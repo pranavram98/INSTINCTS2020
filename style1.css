@@ -216,6 +216,10 @@ body {
     text-align: center;
 }
 
+.event_title{
+    padding-top: 10px;
+}
+
 .event_icon_img {
     padding: 0 25px;
 }
@@ -636,6 +640,10 @@ body {
         float: left;
         text-align: center;
     }
+
+    .event_title{
+        padding-top: 10px;
+    }
     
     .event_icon_img {
         padding: 0 25px;
@@ -676,7 +684,7 @@ body {
     
     .gallery_header {
         position: relative;
-        top:800px;
+        top:750px;
         left: 60px;
         width: 70%;
         height: 100px;
