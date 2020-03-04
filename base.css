@@ -17,6 +17,12 @@ body {
     overflow-x: hidden;
 }
 
+table{
+    width:100%; 
+    border: black; 
+    border-width: 5px;
+    font-size: 28px;
+}
 body {
     background: #ffc929;
     margin: 0;
