@@ -19,6 +19,17 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+marquee{
+    z-index: 100;
+    font-size: 24px;
+    color:gold ;
+    position: absolute;
+    width: 50%;
+    left : 25%;
+    background-color: black;
+    top: 5px;
+    
+}
 
 @keyframes fadeInAnimation {
     0% {
